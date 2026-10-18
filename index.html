@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bethy Fataki // IT Manager &amp; Expert en Cybersécurité</title>
+  <meta name="description"
+    content="Portfolio de Bethy Fataki - IT Manager &amp; Expert en Cybersécurité, spécialisé en infrastructures réseaux, Télécoms, SOC, Cloud &amp; Forensic SI hybrides.">
+  <meta name="keywords"
+    content="Cybersécurité, IT Manager, Ethical Hacker, Pentest, Cisco Ethical Hacker, Python Developer, Sécurité Réseaux, SOC, Télécoms, Forensic, ISO 27001, freeCodeCamp, Kinshasa, RDC">
+  <meta name="author" content="Bethy Fataki">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bethy Fataki // IT Manager &amp; Expert en Cybersécurité">
+  <meta property="og:description"
+    content="Expertise réseaux, télécoms, SOC &amp; sécurité offensive/défensive : Audits de sécurité, ISO 27001, Cloud &amp; Forensic SI hybrides.">
+  <meta property="og:image" content="./assets/avatar.jpg">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient background glow & Canvas grid -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="scanline-overlay"></div>
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- Navigation HUD -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-pulse"></span>
+        <span>BETHY<span class="brand-tag">.FATAKI</span></span>
+        <span style="color: var(--text-dim); font-size: 0.75rem;">// IT_MGR &amp; SEC</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">// À propos</a></li>
+          <li><a href="#skills" class="nav-link">// Compétences</a></li>
+          <li><a href="#projects" class="nav-link">// Projets</a></li>
+          <li><a href="#cve" class="nav-link">// Recherche &amp; Audits</a></li>
+          <li><a href="#certs" class="nav-link">// Certifications</a></li>
+          <li><a href="#terminal" class="nav-link">// Terminal</a></li>
+          <li><a href="#contact" class="nav-link">// Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-sfx" id="sfx-toggle" title="Activer / Désactiver les effets sonores cyberpunk"
+          aria-label="Bouton Effets Sonores">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span id="sfx-text">SFX: ACTIF</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Audit Express</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Mobile">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-clearance">
+            <span class="brand-pulse"></span>
+            <span>CLEARANCE: IT MANAGEMENT &amp; ETHICAL HACKING // ISO 27001 · CISCO · PYTHON DEV 2026</span>
+          </div>
+
+          <h1 class="hero-title">Bethy Fataki</h1>
+
+          <div class="hero-role-wrapper">
+            <span>&gt; </span>
+            <span class="role-typing" id="role-typewriter">IT Manager &amp; Expert en Cybersécurité</span>
+          </div>
+
+          <p class="hero-description">
+            Ingénieur et manager des systèmes d’information, disposant d’une solide expérience dans la conception,
+            l’administration et la <strong>sécurisation des infrastructures réseaux et télécoms</strong> (Cisco WAN,
+            LAN, Wi-Fi, V-SAT, VoIP). Spécialiste certifié <strong>Cisco Ethical Hacker</strong>, du <strong>pilotage de SOC</strong>, des audits de sécurité conformes
+            <strong>ISO/CEI 27001</strong>, de l'automatisation <strong>Python (certifié 300h)</strong> et de la <strong>recherche forensic</strong> dans les
+            SI hybrides.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#audit-estimator" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Demander un Audit
+            </a>
+            <a href="#terminal" class="btn btn-cyber">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              Lancer le CLI Terminal
+            </a>
+            <a href="#cve" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              Recherche Forensic &amp; Audits
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics-pill">
+            <div class="metric-item">
+              <span class="metric-value cyan">15+ Ans</span>
+              <span class="metric-label">Expérience IT &amp; Réseaux</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value emerald">54+ Sites</span>
+              <span class="metric-label">Radio &amp; V-SAT Optimisés</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value purple">SOC Lead</span>
+              <span class="metric-label">Management Opérationnel</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value amber">ISO 27001</span>
+              <span class="metric-label">Conformité &amp; Audits</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Frame with HUD Telemetry -->
+        <div class="hero-visual-card">
+          <div class="cyber-frame">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+
+            <div class="cyber-frame-inner">
+              <img src="./assets/avatar.jpg"
+                alt="Portrait professionnel de Bethy Fataki, IT Manager &amp; Expert en Cybersécurité"
+                class="avatar-img" loading="eager">
+            </div>
+
+            <!-- Floating Telemetry Pills -->
+            <div class="telemetry-badge badge-top">
+              <div class="telemetry-icon shield">🛡️</div>
+              <div class="telemetry-text">
+                <span class="telemetry-title">SOC OPERATION // ACTIVE</span>
+                <span class="telemetry-sub">High-Availability Network Guard</span>
+              </div>
+            </div>
+
+            <div class="telemetry-badge badge-bottom">
+              <div class="telemetry-icon target">🎯</div>
+              <div class="telemetry-text">
+                <span class="telemetry-title">CISCO ETHICAL HACKER &amp; PYTHON DEV</span>
+                <span class="telemetry-sub">Accrédité 2026 // Network Defense &amp; Pentest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT & PHILOSOPHY -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 01. PHILOSOPHIE &amp; APPROCHE</span>
+          <h2 class="section-title">« Penser comme un attaquant, <span class="gradient-text">bâtir comme un
+              ingénieur.</span> »</h2>
+          <p class="section-subtitle">
+            La sécurité ne se résume pas à cocher des cases de conformité. Elle s'éprouve sous la pression d'attaquants
+            réels et s'automatise dès la première ligne de code.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon offensive">⚡</div>
+              <div>
+                <h3>Offensive First</h3>
+                <span class="skill-tagline">Simulation d'Adversaires Réels</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+              <strong>Cisco Certified Ethical Hacker (2026)</strong> : pentest méthodologique, reconnaissance OSINT,
+              exploitation des réseaux filaires &amp; sans-fil, attaques Cloud/IoT, post-exploitation et rédaction
+              de rapports d'intrusion. Audits de conformité <strong>ISO/CEI 27001</strong> et durcissement complet
+              des infrastructures réseau.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon cloud">☁️</div>
+              <div>
+                <h3>Télécoms, V-SAT &amp; Cloud</h3>
+                <span class="skill-tagline">Infrastructures &amp; Haute Disponibilité</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+              Administration de réseaux IP (Cisco WAN, LAN, Wi-Fi), stations <strong>V-SAT</strong> et faisceaux
+              hertziens, solutions VoIP, virtualisation (VMware, VirtualBox, Proxmox) et Cloud (Azure, AWS).
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon blue">🛡️</div>
+              <div>
+                <h3>Management SOC &amp; Projets</h3>
+                <span class="skill-tagline">Direction Technique &amp; Forensic</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+              Management opérationnel de SOC, suivi des KPIs de performance, direction d'équipes techniques
+              pluridisciplinaires et recherche active en <strong>investigation forensic dans les SI hybrides</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DOMAINES D'EXPERTISE (ARSENAL) -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 02. ARSENAL &amp; COMPÉTENCES</span>
+          <h2 class="section-title">Maîtrise Technique &amp; <span class="gradient-text">Outils Opérationnels</span>
+          </h2>
+          <p class="section-subtitle">
+            Un savoir-faire éprouvé en télécoms, cybersécurité opérationnelle, gestion d'infrastructures et pilotage de
+            projets.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Carte 1 : Administration Réseaux & Télécoms -->
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon offensive">📡</div>
+              <div>
+                <h3>Réseaux IP &amp; Télécoms</h3>
+                <span class="skill-tagline">Infrastructures &amp; Faisceaux</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><i>▶</i> Administration réseaux Cisco (WAN, LAN, Wi-Fi)</li>
+              <li class="skill-item"><i>▶</i> Installation &amp; maintenance V-SAT et faisceaux hertziens</li>
+              <li class="skill-item"><i>▶</i> Technologie WiMAX Alvarion (CAIT, CASO, CASS)</li>
+              <li class="skill-item"><i>▶</i> Routage &amp; commutation : Cisco, Microtik, Juniper</li>
+              <li class="skill-item"><i>▶</i> Téléphonie VoIP Intranet &amp; optimisation du trafic</li>
+            </ul>
+            <div class="tools-tray">
+              <span class="tool-pill">Cisco IOS</span>
+              <span class="tool-pill">Alvarion WiMAX</span>
+              <span class="tool-pill">MikroTik RouterOS</span>
+              <span class="tool-pill">Juniper Junos</span>
+              <span class="tool-pill">V-SAT iDirect</span>
+              <span class="tool-pill">Faisceaux RF</span>
+              <span class="tool-pill">Wireshark</span>
+            </div>
+          </div>
+
+          <!-- Carte 2 : Cybersécurité, SOC & Ethical Hacking -->
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon blue">🛡️</div>
+              <div>
+                <h3>Cybersécurité, SOC &amp; Ethical Hacking</h3>
+                <span class="skill-tagline">Défense, Détection &amp; Pentest Méthodologique</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><i>▶</i> Pentest méthodologique &amp; reconnaissance OSINT (Cisco Ethical Hacker)</li>
+              <li class="skill-item"><i>▶</i> Exploitation failles réseaux (filaires, Wi-Fi 802.11) &amp; Cloud/IoT</li>
+              <li class="skill-item"><i>▶</i> Post-exploitation, analyse des risques &amp; rédaction de rapports d'intrusion</li>
+              <li class="skill-item"><i>▶</i> Management opérationnel de SOC &amp; suivi indicateurs (KPI)</li>
+              <li class="skill-item"><i>▶</i> Audits de conformité <strong>ISO/CEI 27001</strong> &amp; recherche forensic</li>
+            </ul>
+            <div class="tools-tray">
+              <span class="tool-pill">Cisco Ethical Hacker</span>
+              <span class="tool-pill">OSINT &amp; Recon</span>
+              <span class="tool-pill">Nmap / Wireshark</span>
+              <span class="tool-pill">Metasploit</span>
+              <span class="tool-pill">Burp Suite</span>
+              <span class="tool-pill">ISO 27001</span>
+              <span class="tool-pill">Forensics SI</span>
+            </div>
+          </div>
+
+          <!-- Carte 3 : Systèmes, Cloud & Virtualisation -->
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon cloud">☁️</div>
+              <div>
+                <h3>Blue Team, SOC &amp; Forensics</h3>
+                <span class="skill-tagline">Investigation &amp; Détection</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><i>▶</i> Administration serveurs Linux/Unix &amp; Windows Server</li>
+              <li class="skill-item"><i>▶</i> Virtualisation : VMware ESXi, VirtualBox &amp; Proxmox</li>
+              <li class="skill-item"><i>▶</i> Cloud : Microsoft Azure, OneDrive &amp; AWS Cloud</li>
+              <li class="skill-item"><i>▶</i> Gestion des bases de données MySQL &amp; PostgreSQL</li>
+              <li class="skill-item"><i>▶</i> Optimisation des requêtes SQL et indexation</li>
+            </ul>
+            <div class="tools-tray">
+              <span class="tool-pill">Linux/Unix</span>
+              <span class="tool-pill">Windows Server</span>
+              <span class="tool-pill">VMware</span>
+              <span class="tool-pill">Proxmox</span>
+              <span class="tool-pill">Microsoft Azure</span>
+              <span class="tool-pill">AWS Cloud</span>
+              <span class="tool-pill">MySQL/PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Carte 4 : Management, Projets & Dev Python Certifié -->
+          <div class="skill-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon governance">⚖️</div>
+              <div>
+                <h3>Management, Projets &amp; Dev</h3>
+                <span class="skill-tagline">Direction &amp; Python Developer (300h)</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><i>▶</i> Direction technique &amp; encadrement d'équipe d'ingénieurs</li>
+              <li class="skill-item"><i>▶</i> <strong>Développeur Python certifié freeCodeCamp (300h)</strong> : automatisation SecOps &amp; réseau</li>
+              <li class="skill-item"><i>▶</i> Scripts d'audit, traitement de logs et parsing de trames réseau</li>
+              <li class="skill-item"><i>▶</i> Pilotage de projets avec MS Office Project &amp; sous-traitance</li>
+              <li class="skill-item"><i>▶</i> Enseignant invité (ISCK), coaching professionnel &amp; documentation</li>
+            </ul>
+            <div class="tools-tray">
+              <span class="tool-pill">Python (300h Cert.)</span>
+              <span class="tool-pill">Python SecOps</span>
+              <span class="tool-pill">JavaScript</span>
+              <span class="tool-pill">MS Project</span>
+              <span class="tool-pill">Scapy / Requests</span>
+              <span class="tool-pill">Audit Qualité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TERMINAL INTERACTIF CLI -->
+    <section class="terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 03. CONSOLE INTERACTIVE</span>
+          <h2 class="section-title">Fataki-OS <span class="gradient-text">CLI Terminal v4.2</span></h2>
+          <p class="section-subtitle">
+            Pilotez le portfolio directement au clavier. Tapez des commandes Unix / SecOps ou cliquez sur les raccourcis
+            ci-dessous.
+          </p>
+        </div>
+
+        <div class="terminal-wrapper">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>secops@fataki-lab:~ [bash session #441]</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--emerald-accent);">
+              ● ENCRYPTED SSH-2
+            </div>
+          </div>
+
+          <!-- Quick Command Pills for easy access -->
+          <div class="terminal-quick-pills">
+            <span
+              style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); margin-right: 6px;">Exécuter:</span>
+            <button class="quick-pill-btn" data-cmd="whoami">whoami</button>
+            <button class="quick-pill-btn" data-cmd="skills">skills</button>
+            <button class="quick-pill-btn" data-cmd="projects">projects</button>
+            <button class="quick-pill-btn" data-cmd="cve">cve</button>
+            <button class="quick-pill-btn" data-cmd="certs">certs</button>
+            <button class="quick-pill-btn" data-cmd="contact">contact</button>
+            <button class="quick-pill-btn" data-cmd="matrix">matrix</button>
+            <button class="quick-pill-btn" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="terminal-body" id="terminal-screen">
+            <div class="terminal-output" id="terminal-history">
+              <span class="highlight">Bienvenue sur le terminal d'administration &amp; cybersécurité de Bethy Fataki
+                [v4.2.0-release]</span>
+              Système : Debian GNU/Linux 12 (bookworm) / Kernel 6.8.0-netsec
+              Tapez <span class="highlight">'help'</span> pour lister les commandes disponibles ou cliquez sur les
+              boutons au-dessus.
+            </div>
+
+            <div class="terminal-input-row">
+              <span class="terminal-prompt">secops@fataki-lab:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false"
+                placeholder="Tapez une commande (ex: help, whoami, cve)..." aria-label="Console terminal input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJETS PHARES -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 04. PROJETS &amp; ÉTUDES DE CAS</span>
+          <h2 class="section-title">Réalisations &amp; <span class="gradient-text">Projets Déployés</span></h2>
+          <p class="section-subtitle">
+            Optimisation radio FAI à large échelle, déploiements V-SAT critiques et cadre de recherche forensic en
+            environnement hybride.
+          </p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">Tous les Projets</button>
+          <button class="filter-btn" data-filter="telecom">Télécoms &amp; Radio</button>
+          <button class="filter-btn" data-filter="network">Infrastructures &amp; V-SAT</button>
+          <button class="filter-btn" data-filter="research">Recherche Forensic</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Radio Fine-Tuning 54 Sites -->
+          <article class="project-card" data-category="telecom">
+            <div class="project-thumb-wrapper">
+              <img src="./assets/project-aegis.jpg" alt="Fine-Tuning Radio et optimisation de couverture FAI"
+                class="project-img" loading="lazy">
+              <span class="project-badge-float">TÉLÉCOMS &amp; RADIO</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fine-Tuning Radio &amp; Optimisation 54 Sites FAI</h3>
+              <p class="project-desc">
+                Fine-tuning et recalibrage complet de 54 sites radio pour le FAI Cieluxtelecom à Kinshasa. Analyse de la
+                propagation RF, ajustement des faisceaux hertziens, équilibrage de charge et élimination des
+                interférences spectrales.
+              </p>
+
+              <div class="project-impact-box">
+                <strong>Impact Réel :</strong> Élimination des goulots d'étranglement, optimisation de la zone de
+                couverture et signal haut débit stable pour des milliers d'abonnés.
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Alvarion WiMAX</span>
+                <span class="tech-tag">Faisceaux Hertziens</span>
+                <span class="tech-tag">Cisco Routing</span>
+                <span class="tech-tag">Analyseur RF</span>
+                <span class="tech-tag">NOC Supervision</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-cyber btn-sm open-modal-btn" data-project="radio-opt">
+                  Consulter l'Étude de Cas →
+                </button>
+                <a href="#contact" class="btn btn-outline btn-sm">Demander Détails</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: V-SAT & Boucle Locale -->
+          <article class="project-card" data-category="network">
+            <div class="project-thumb-wrapper">
+              <img src="./assets/project-shadowtrace.jpg" alt="Déploiement boucle locale et stations V-SAT"
+                class="project-img" loading="lazy">
+              <span class="project-badge-float">INFRASTRUCTURE &amp; V-SAT</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Déploiement Boucle Locale &amp; V-SAT</h3>
+              <p class="project-desc">
+                Installation, configuration et maintenance de la boucle locale, des liaisons par satellite V-SAT et du
+                parc de routeurs/switchs Cisco, Microtik et Juniper du FAI. Raccordement de sites distants et
+                intégration des flux VoIP Intranet.
+              </p>
+
+              <div class="project-impact-box">
+                <strong>Impact Réel :</strong> Haute disponibilité (99.9%) sur les liaisons sensibles, connectivité
+                fluide et temps de latence minimisé pour les clients abonnés.
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">V-SAT</span>
+                <span class="tech-tag">Cisco WAN/LAN</span>
+                <span class="tech-tag">Microtik</span>
+                <span class="tech-tag">Juniper</span>
+                <span class="tech-tag">VoIP</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-cyber btn-sm open-modal-btn" data-project="vsat-infra">
+                  Consulter l'Étude de Cas →
+                </button>
+                <a href="#contact" class="btn btn-outline btn-sm">Demander Détails</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Recherche Forensic SI Hybrides -->
+          <article class="project-card" data-category="research">
+            <div class="project-thumb-wrapper">
+              <img src="./assets/project-vaultbreaker.jpg"
+                alt="Recherche forensic sur les systèmes d'information hybrides" class="project-img" loading="lazy">
+              <span class="project-badge-float">FORENSIC &amp; SI HYBRIDES</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Méthodologie Forensic SI Hybrides en RDC</h3>
+              <p class="project-desc">
+                Conception d'une méthodologie d'investigation forensic des incidents de sécurité pour les systèmes
+                d'information hybrides (infrastructures sur site et cloud) en Afrique centrale, adaptée aux contraintes
+                de la RDC.
+              </p>
+
+              <div class="project-impact-box">
+                <strong>Impact Réel :</strong> Modèle rigoureux de traçabilité, collecte de preuves numériques
+                inviolables et protocole de réponse aux incidents pour environnements distribués.
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Digital Forensics</span>
+                <span class="tech-tag">SI Hybrides</span>
+                <span class="tech-tag">Cloud Security</span>
+                <span class="tech-tag">ISO/CEI 27001</span>
+                <span class="tech-tag">Audit Logs</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-cyber btn-sm open-modal-btn" data-project="forensic-rdc">
+                  Consulter l'Étude de Cas →
+                </button>
+                <a href="#contact" class="btn btn-outline btn-sm">Demander Détails</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CVE & SECURITY RESEARCH -->
+    <section class="cve-section" id="cve">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 05. RECHERCHE &amp; AUDITS DE SÉCURITÉ</span>
+          <h2 class="section-title">Axes de Recherche &amp; <span class="gradient-text">Audits Opérationnels</span></h2>
+          <p class="section-subtitle">
+            Travaux d'investigation forensic, audits de conformité ISO/CEI 27001 et interventions en environnement
+            critique.
+          </p>
+        </div>
+
+        <div class="cve-table-wrapper">
+          <table class="cve-table">
+            <thead>
+              <tr>
+                <th>Référence / Domaine</th>
+                <th>Type d'Intervention</th>
+                <th>Périmètre / Cible</th>
+                <th>Standard / Réf.</th>
+                <th>Statut</th>
+                <th>Rapport</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cve-id">
+                  <span style="color: var(--cyan-primary);">●</span>
+                  <span>FORENSIC-RDC</span>
+                </td>
+                <td>Investigation forensic des incidences de sécurité</td>
+                <td>SI Hybrides en Afrique Centrale (RDC)</td>
+                <td><span class="cvss-badge cvss-critical">RECHERCHE MAJEURE</span></td>
+                <td><span style="color: var(--emerald-accent); font-family: var(--font-mono); font-size: 0.8rem;">✓
+                    Thèse &amp; Recherche</span></td>
+                <td>
+                  <button class="btn btn-cyber btn-sm open-cve-modal" data-cve="cve-1">Voir Détails</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="cve-id">
+                  <span style="color: var(--emerald-accent);">●</span>
+                  <span>AUDIT-ISO-27001</span>
+                </td>
+                <td>Audit de conformité &amp; analyse des risques cybersécurité</td>
+                <td>Infrastructures Réseaux &amp; FAI Cieluxtelecom</td>
+                <td><span class="cvss-badge cvss-high">ISO/CEI 27001</span></td>
+                <td><span style="color: var(--emerald-accent); font-family: var(--font-mono); font-size: 0.8rem;">✓
+                    Conforme &amp; Appliqué</span></td>
+                <td>
+                  <button class="btn btn-cyber btn-sm open-cve-modal" data-cve="cve-2">Voir Détails</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="cve-id">
+                  <span style="color: var(--purple-accent);">●</span>
+                  <span>DB-HARDENING</span>
+                </td>
+                <td>Sécurisation &amp; optimisation bases de données contre intrusions</td>
+                <td>Serveurs de Données MySQL &amp; PostgreSQL</td>
+                <td><span class="cvss-badge cvss-high">SÉCURISATION DB</span></td>
+                <td><span style="color: var(--emerald-accent); font-family: var(--font-mono); font-size: 0.8rem;">✓
+                    Durci &amp; Optimisé</span></td>
+                <td>
+                  <button class="btn btn-cyber btn-sm open-cve-modal" data-cve="cve-3">Voir Détails</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="cve-id">
+                  <span style="color: var(--amber-accent);">●</span>
+                  <span>RADIO-QOS-54</span>
+                </td>
+                <td>Audit de trafic, décongestion &amp; optimisation RF</td>
+                <td>54 Sites Radio &amp; Boucle Locale Kinshasa</td>
+                <td><span class="cvss-badge cvss-medium">QoS &amp; COUVERTURE</span></td>
+                <td><span style="color: var(--emerald-accent); font-family: var(--font-mono); font-size: 0.8rem;">✓
+                    Déployé avec succès</span></td>
+                <td>
+                  <button class="btn btn-cyber btn-sm open-cve-modal" data-cve="cve-4">Voir Détails</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CERTIFICATIONS -->
+    <section class="certs-section" id="certs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 06. ACCRÉDITATIONS &amp; DIPLÔMES</span>
+          <h2 class="section-title">Diplômes &amp; <span class="gradient-text">Certifications Reconnues</span></h2>
+          <p class="section-subtitle">
+            Titres académiques supérieurs et certifications professionnelles validés en ingénierie, réseaux et
+            cybersécurité.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 : Cisco Ethical Hacker (Mai 2026) -->
+          <div class="cert-card">
+            <div class="cert-badge-icon" style="background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(0, 242, 254, 0.2)); border-color: rgba(244, 63, 94, 0.5); color: #f43f5e;">⚔️</div>
+            <h4>Ethical Hacker</h4>
+            <p class="cert-issuer">Cisco Networking Academy // Mai 2026</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Pentest méthodologique, reconnaissance (OSINT) &amp; scanning, exploitation des réseaux filaires &amp; sans-fil, failles applicatives, sécurité Cloud/Mobile/IoT, post-exploitation &amp; rapports d'intrusion.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; align-items: center;">
+              <span class="cert-id-badge" style="color: #f43f5e; background: rgba(244, 63, 94, 0.08); border-color: rgba(244, 63, 94, 0.3);">CISCO CREDENTIAL</span>
+              <span class="cert-id-badge">ID: CISCO-ETHICAL-HACKER-2026</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 : Python Developer (Mars 2026) -->
+          <div class="cert-card">
+            <div class="cert-badge-icon" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(245, 158, 11, 0.2)); border-color: rgba(245, 158, 11, 0.5); color: #f59e0b;">🐍</div>
+            <h4>Python Developer</h4>
+            <p class="cert-issuer">freeCodeCamp.org // Mars 2026</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Certification développeur (~300 heures de pratique) : structures de données avancées, algorithmique, scripts d'automatisation réseau, tooling offensif et programmation système.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; align-items: center;">
+              <span class="cert-id-badge" style="color: #f59e0b; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.3);">300 HEURES DE DEV</span>
+              <a href="https://freecodecamp.org/certification/focalone/python-v9" target="_blank" rel="noopener noreferrer" class="cert-verify-link">Vérifier l'accréditation ↗</a>
+            </div>
+          </div>
+
+          <!-- Cert 3 : Génie Électrique / TIC -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">🎓</div>
+            <h4>Génie Électrique / TIC</h4>
+            <p class="cert-issuer">ISTA Kinshasa (2ème cycle)</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Diplôme de 2ème cycle en Génie Électrique &amp; Informatique Appliquée aux Technologies de l'Information
+              et de la Communication (Distinction).
+            </p>
+            <span class="cert-id-badge">MENTION DISTINCTION</span>
+          </div>
+
+          <!-- Cert 4 : Cisco Network Defense -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">🛡️</div>
+            <h4>Cisco Network Defense</h4>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Certifications officielles Cisco Network Defense, Cyber Threat Management, Cybersecurity Analyst Career
+              &amp; Networking Essentials.
+            </p>
+            <span class="cert-id-badge">ID: CISCO-NET-DEFENSE</span>
+          </div>
+
+          <!-- Cert 5 : Certifications WiMAX -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">📡</div>
+            <h4>Certifications WiMAX</h4>
+            <p class="cert-issuer">ALVARION</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Certifications professionnelles WiMAX spécialisées : CAIT, CASO et CASS dans le domaine Informatique &amp;
+              Réseaux radio haut débit.
+            </p>
+            <span class="cert-id-badge">ID: ALVARION-WIMAX-VERIFIED</span>
+          </div>
+
+          <!-- Cert 6 : JavaScript & Web Design -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">💻</div>
+            <h4>JavaScript &amp; Web Design</h4>
+            <p class="cert-issuer">FreeCodeCamp</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+              Certifications en programmation d'algorithmes JavaScript &amp; structures de données ainsi que Responsive
+              Web Design moderne.
+            </p>
+            <span class="cert-id-badge">ID: FCC-JS-RESPONSIVE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION EXPÉRIENCE TIMELINE -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 07. PARCOURS &amp; TRAJECTOIRE</span>
+          <h2 class="section-title">Expérience <span class="gradient-text">Opérationnelle &amp; Direction</span></h2>
+          <p class="section-subtitle">
+            Du management technique et pilotage de SOC chez un FAI majeur aux travaux de recherche forensic et
+            enseignement supérieur.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Post 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Chercheur en Sécurité des SI &amp; Enseignant Invité</h3>
+                  <div class="timeline-company">Recherche Forensic // ISCK (Institut Supérieur Catholique de Kinshasa)
+                  </div>
+                </div>
+                <span class="timeline-date">2019 — Présent</span>
+              </div>
+              <p class="timeline-desc">
+                Recherche approfondie sur la <em>« Méthodologie d’investigation forensic des incidences de sécurité dans
+                  les systèmes d’information hybrides en Afrique centrale : cas de la RDC »</em>. Enseignement
+                académique en administration des systèmes et réseaux pour la promotion G3 Informatique.
+              </p>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Manager SOC &amp; Ingénieur Cybersécurité</h3>
+                  <div class="timeline-company">Cieluxtelecom // Kinshasa (CDI)</div>
+                </div>
+                <span class="timeline-date">08/2011 — 07/2012</span>
+              </div>
+              <p class="timeline-desc">
+                Pilotage opérationnel du SOC et supervision des indicateurs clés (KPIs) pour évaluer la réactivité face
+                aux incidents. Réalisation d'audits de sécurité conformes à la norme <strong>ISO/CEI 27001</strong>.
+                Analyse des risques, veille technologique, sécurisation et optimisation des bases de données contre les
+                intrusions, et coordination technique avec les ingénieurs NOC (partenaires GEKA et ALVARION).
+              </p>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Manager Direction Technique &amp; Opérations Maintenance</h3>
+                  <div class="timeline-company">Cieluxtelecom // Kinshasa (CDI)</div>
+                </div>
+                <span class="timeline-date">08/2009 — 02/2011</span>
+              </div>
+              <p class="timeline-desc">
+                Management et encadrement d'une équipe technique de 12 personnes (recrutement, montée en compétences,
+                planification, suivi de charge). Administration des routeurs et switchs Cisco, Microtik et Juniper ainsi
+                que de la VoIP intranet. Gestion des sous-traitants (sourcing, devis, contrôle qualité). Résolution de
+                l'engorgement du trafic réseau pour optimiser le service abonnés.
+              </p>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Assistant Chef de Projet Télécoms</h3>
+                  <div class="timeline-company">Cieluxtelecom // Kinshasa, Matadi, Lubumbashi, Brazzaville</div>
+                </div>
+                <span class="timeline-date">03/2007 — 07/2009</span>
+              </div>
+              <p class="timeline-desc">
+                Conduite de site survey sur une centaine de sites radio afin d'identifier les meilleurs emplacements
+                pour la couverture réseau. Pilotage des plannings avec MS Office Project, tableaux de bord de suivi
+                d'avancement et coordination terrain avec les intervenants techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION AUDIT ESTIMATOR INTERACTIF -->
+    <section class="audit-section" id="audit-estimator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 08. SIMULATEUR D'AUDIT SÉCURITÉ &amp; RÉSEAUX</span>
+          <h2 class="section-title">Configurez Votre <span class="gradient-text">Mission d'Expertise</span></h2>
+          <p class="section-subtitle">
+            Évaluez en direct la méthodologie recommandée, la durée estimée et les livrables associés selon vos
+            contraintes d'infrastructure.
+          </p>
+        </div>
+
+        <div class="audit-estimator-box">
+          <div class="estimator-grid">
+            <div class="estimator-controls">
+              <!-- Type de cible -->
+              <div>
+                <span class="control-group-title">1. Périmètre de la cible ou infrastructure :</span>
+                <div class="chips-selector" id="target-chips">
+                  <span class="chip-option selected" data-type="network">Infrastructures Réseaux (Cisco/Microtik)</span>
+                  <span class="chip-option" data-type="soc">Supervision SOC &amp; ISO/CEI 27001</span>
+                  <span class="chip-option" data-type="cloud">Systèmes &amp; SI Hybrides (Linux/Cloud)</span>
+                  <span class="chip-option" data-type="db">Bases de Données (MySQL/PostgreSQL)</span>
+                  <span class="chip-option" data-type="vsat">Liaisons V-SAT &amp; Sites Radio</span>
+                </div>
+              </div>
+
+              <!-- Objectif / Type de prestation -->
+              <div>
+                <span class="control-group-title">2. Type d'exercice ou objectif :</span>
+                <div class="chips-selector" id="goal-chips">
+                  <span class="chip-option selected" data-goal="iso">Audit Conformité ISO 27001</span>
+                  <span class="chip-option" data-goal="pentest">Pentest &amp; Ethical Hacking (Cisco)</span>
+                  <span class="chip-option" data-goal="forensic">Investigation Forensic SI Hybride</span>
+                  <span class="chip-option" data-goal="tuning">Optimisation &amp; Fine-tuning Radio</span>
+                  <span class="chip-option" data-goal="hardening">Durcissement Système &amp; DB</span>
+                </div>
+              </div>
+
+              <!-- Envergure / Complexité -->
+              <div>
+                <span class="control-group-title">3. Complexité du périmètre :</span>
+                <div class="chips-selector" id="scale-chips">
+                  <span class="chip-option" data-scale="small">Périmètre Réduit / PME</span>
+                  <span class="chip-option selected" data-scale="medium">Opérateur / Réseau Multi-sites (Moyen)</span>
+                  <span class="chip-option" data-scale="large">Infrastructure Nationale / Hybride Critique</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Résultat dynamique du simulateur -->
+            <div class="estimator-result-card" id="estimator-output">
+              <div>
+                <div class="result-header">
+                  <span
+                    style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-primary); letter-spacing: 1px;">CONFIGURATION
+                    D'AUDIT SÉLECTIONNÉE</span>
+                  <h4 id="calc-title" style="margin-top: 6px;">Audit de Sécurité Réseaux (ISO 27001)</h4>
+                </div>
+
+                <div class="result-spec">
+                  <div class="spec-row">
+                    <span class="spec-label">Méthodologie :</span>
+                    <span class="spec-val" id="calc-method">ISO/CEI 27001 + Analyse de Risques</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Durée Estimée :</span>
+                    <span class="spec-val" id="calc-duration">6 à 10 Jours / Homme</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Livrable Technique :</span>
+                    <span class="spec-val" id="calc-report">Matrice des écarts &amp; Plan de durcissement</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Restitution Exécutive :</span>
+                    <span class="spec-val">Présentation Direction Technique / DG</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Suivi &amp; Accompagnement :</span>
+                    <span class="spec-val" style="color: var(--cyan-primary);">Assistance aux équipes incluse</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;" id="calc-cta-btn">
+                  Initier cet Audit / Échange Direct
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT SÉCURISÉ & PGP -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">// 09. CANAUX SÉCURISÉS</span>
+          <h2 class="section-title">Prendre Contact &amp; <span class="gradient-text">Chiffrement PGP</span></h2>
+          <p class="section-subtitle">
+            Vous avez un projet d'audit, une mission d'évaluation ou un besoin d'expertise ? Échangeons sous NDA.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Formulaire de contact -->
+          <div class="contact-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 20px;">
+              Formulaire de Contact Crypté
+            </h3>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">&gt; VOTRE NOM / ORGANISATION *</label>
+                <input type="text" id="contact-name" class="form-input" required
+                  placeholder="ex: Marc Dubois, RSSI Groupe..." autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">&gt; ADRESSE EMAIL PROFESSIONNELLE *</label>
+                <input type="email" id="contact-email" class="form-input" required placeholder="m.dubois@entreprise.com"
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-type" class="form-label">&gt; OBJET DE LA SOLLICITATION</label>
+                <select id="contact-type" class="form-select">
+                  <option value="audit">Audit de Sécurité / Pentest</option>
+                  <option value="redteam">Simulation Red Team / Adversary</option>
+                  <option value="cloud">Conseil DevSecOps &amp; Cloud Hardening</option>
+                  <option value="conference">Conférence / Formation / Sensibilisation</option>
+                  <option value="autre">Autre demande spécifique</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg" class="form-label">&gt; DÉTAIL DU BESOIN OU PÉRIMÈTRE *</label>
+                <textarea id="contact-msg" class="form-textarea" rows="4" required
+                  placeholder="Décrivez succinctement vos contraintes, délais et périmètre (possibilité d'échanger sous NDA)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submit-contact-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Transmettre la Demande
+              </button>
+            </form>
+          </div>
+
+          <!-- Coordonnées sécurisées & PGP -->
+          <div class="contact-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 20px;">
+              Canaux Directs Sécurisés
+            </h3>
+
+            <div
+              style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-mono); font-size: 0.88rem;">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                <span style="color: var(--text-dim);">Email Professionnel :</span>
+                <span style="color: var(--cyan-primary); font-weight: 600;">fmuibu@gmail.com</span>
+                <button class="btn-sfx copy-btn" data-clipboard="fmuibu@gmail.com"
+                  title="Copier l'email">Copier</button>
+              </div>
+
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                <span style="color: var(--text-dim);">Téléphone Direct :</span>
+                <span style="color: var(--emerald-accent); font-weight: 600;">+243 826 806 151</span>
+                <button class="btn-sfx copy-btn" data-clipboard="+243826806151"
+                  title="Copier le numéro">Copier</button>
+              </div>
+
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                <span style="color: var(--text-dim);">Localisation :</span>
+                <span style="color: #fff;">Kinshasa, RDC (Missions Internationales)</span>
+              </div>
+            </div>
+
+            <!-- Clé PGP -->
+            <div class="pgp-box">
+              <div class="pgp-header">
+                <span>// CLÉ PUBLIQUE PGP (GPG)</span>
+                <button class="btn-sfx copy-btn" data-clipboard="-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.10.10
+mQENBF+0N8kBCADJ6q31Q3n2+M7pPZ3U7A...
+-----END PGP PUBLIC KEY BLOCK-----" id="copy-pgp-btn">Copier Clé Publique</button>
+              </div>
+              <div class="pgp-fingerprint">
+                <strong>Fingerprint :</strong><br>
+                <code>8F4B 9A21 5C02 78E9 E4B3 1902 46DF 883A 9C21 77FE</code>
+              </div>
+              <p style="color: var(--text-dim); font-size: 0.72rem; margin-top: 8px;">
+                Utilisez cette clé pour chiffrer tout document sensible ou spécification de périmètre avant
+                transmission.
+              </p>
+            </div>
+
+            <!-- Social Links & Profils Certifiés -->
+            <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
+              <a href="https://linkedin.com/in/fataki-muibu" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">LinkedIn (Fataki Muibu)</a>
+              <a href="https://freecodecamp.org/focalone" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">freeCodeCamp (focalone)</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">GitHub</a>
+              <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">TryHackMe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-telemetry">
+        <span>● SYSTEM STATUS: OPERATIONAL</span>
+        <span>● DEFCON: 4</span>
+        <span id="footer-uptime">● UPTIME: 99.98%</span>
+        <span id="footer-time">● UTC: --:--:--</span>
+        <span>● CIPHER: TLS 1.3 / AES-GCM-256</span>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 Bethy Fataki. Tous droits réservés. Développé avec des standards stricts de sécurité offensive et
+        d'hygiène numérique.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MODAL FOR PROJECT CASE STUDIES & CVE DETAILS -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fermer la boîte de dialogue">✕</button>
+      <div id="modal-dynamic-content">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notice" id="toast-notice">
+    <span style="font-size: 1.2rem;">✓</span>
+    <span id="toast-msg">Texte copié dans le presse-papier !</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
