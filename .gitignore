@@ -1,0 +1,39 @@
+# Fichiers de sauvegarde et temporaires
+*.bak
+*.backup
+*.tmp
+*.temp
+backups/
+scratch/
+
+# Variables d'environnement & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+credentials.json
+
+# Caches et logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+
+# Éditeurs et OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.swp
+*~
+
+# Dépendances (si ajout de packages plus tard)
+node_modules/
+dist/
+build/
