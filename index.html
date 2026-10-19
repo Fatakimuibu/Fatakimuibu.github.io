@@ -991,19 +991,19 @@
             <form class="contact-form" id="contact-form">
               <div class="form-group">
                 <label for="contact-name" class="form-label">&gt; VOTRE NOM / ORGANISATION *</label>
-                <input type="text" id="contact-name" class="form-input" required
+                <input type="text" id="contact-name" name="user_name" class="form-input" required
                   placeholder="ex: Marc Dubois, RSSI Groupe..." autocomplete="name">
               </div>
 
               <div class="form-group">
                 <label for="contact-email" class="form-label">&gt; ADRESSE EMAIL PROFESSIONNELLE *</label>
-                <input type="email" id="contact-email" class="form-input" required placeholder="m.dubois@entreprise.com"
+                <input type="email" id="contact-email" name="user_email" class="form-input" required placeholder="m.dubois@entreprise.com"
                   autocomplete="email">
               </div>
 
               <div class="form-group">
                 <label for="contact-type" class="form-label">&gt; OBJET DE LA SOLLICITATION</label>
-                <select id="contact-type" class="form-select">
+                <select id="contact-type" name="service_type" class="form-select">
                   <option value="audit">Audit de Sécurité / Pentest</option>
                   <option value="redteam">Simulation Red Team / Adversary</option>
                   <option value="cloud">Conseil DevSecOps &amp; Cloud Hardening</option>
@@ -1014,7 +1014,7 @@
 
               <div class="form-group">
                 <label for="contact-msg" class="form-label">&gt; DÉTAIL DU BESOIN OU PÉRIMÈTRE *</label>
-                <textarea id="contact-msg" class="form-textarea" rows="4" required
+                <textarea id="contact-msg" name="message" class="form-textarea" rows="4" required
                   placeholder="Décrivez succinctement vos contraintes, délais et périmètre (possibilité d'échanger sous NDA)..."></textarea>
               </div>
 
@@ -1129,6 +1129,8 @@ mQENBF+0N8kBCADJ6q31Q3n2+M7pPZ3U7A...
     <span id="toast-msg">Texte copié dans le presse-papier !</span>
   </div>
 
+  <!-- EmailJS Official Browser SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 
