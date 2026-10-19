@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const osc = audioCtx.createOscillator();
       const gain = audioCtx.createGain();
-      
+
       osc.type = type;
       osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(frequency * 0.5, audioCtx.currentTime + duration);
@@ -858,19 +858,19 @@ ACCÈS AU MAINFRAME SÉCURISÉ EFFECTUÉ // BETHY FATAKI.</span>`
    * ------------------------------------------------------------------------ */
   // ⚡ CONFIGURATION EMAILJS : Remplacez les 3 valeurs ci-dessous par les vôtres
   const EMAILJS_CONFIG = {
-    publicKey: "VOTRE_PUBLIC_KEY",   // ex: "XyZ123abc456..." (disponible dans EmailJS > Account > API Keys)
-    serviceId: "VOTRE_SERVICE_ID",   // ex: "service_xxxxxxx" (disponible dans EmailJS > Email Services)
-    templateId: "VOTRE_TEMPLATE_ID"  // ex: "template_xxxxxxx" (disponible dans EmailJS > Email Templates)
+    publicKey: "PiUyOnUqZeN2XtfL6",   // ex: "XyZ123abc456..." (disponible dans EmailJS > Account > API Keys)
+    serviceId: "service_i2z9kvr",   // ex: "service_xxxxxxx" (disponible dans EmailJS > Email Services)
+    templateId: "template_lm840bm"  // ex: "template_xxxxxxx" (disponible dans EmailJS > Email Templates)
   };
 
   const contactForm = document.getElementById('contact-form');
   const submitContactBtn = document.getElementById('submit-contact-btn');
 
   // Initialisation du SDK EmailJS si la clé publique a été configurée
-  const isEmailJSConfigured = EMAILJS_CONFIG.publicKey && 
-                              EMAILJS_CONFIG.publicKey !== "VOTRE_PUBLIC_KEY" &&
-                              EMAILJS_CONFIG.serviceId !== "VOTRE_SERVICE_ID" &&
-                              EMAILJS_CONFIG.templateId !== "VOTRE_TEMPLATE_ID";
+  const isEmailJSConfigured = EMAILJS_CONFIG.publicKey &&
+    EMAILJS_CONFIG.publicKey !== "VOTRE_PUBLIC_KEY" &&
+    EMAILJS_CONFIG.serviceId !== "VOTRE_SERVICE_ID" &&
+    EMAILJS_CONFIG.templateId !== "VOTRE_TEMPLATE_ID";
 
   if (window.emailjs && isEmailJSConfigured) {
     try {
@@ -883,7 +883,7 @@ ACCÈS AU MAINFRAME SÉCURISÉ EFFECTUÉ // BETHY FATAKI.</span>`
   if (contactForm && submitContactBtn) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const originalText = submitContactBtn.innerHTML;
       submitContactBtn.innerHTML = `
         <span class="brand-pulse"></span>
@@ -898,7 +898,7 @@ ACCÈS AU MAINFRAME SÉCURISÉ EFFECTUÉ // BETHY FATAKI.</span>`
             submitContactBtn.innerHTML = `<span>✓ Message Sécurisé Transmis !</span>`;
             submitContactBtn.style.background = 'linear-gradient(135deg, #00ff87 0%, #60efff 100%)';
             showToast("Demande envoyée avec succès ! Réponse sous 24h ouvrées.");
-            
+
             setTimeout(() => {
               contactForm.reset();
               submitContactBtn.innerHTML = originalText;
@@ -911,7 +911,7 @@ ACCÈS AU MAINFRAME SÉCURISÉ EFFECTUÉ // BETHY FATAKI.</span>`
             submitContactBtn.innerHTML = `<span>⚠ Échec de transmission</span>`;
             submitContactBtn.style.background = 'linear-gradient(135deg, #ff0055 0%, #ff5252 100%)';
             showToast("Erreur lors de l'envoi. Écrivez directement à fmuibu@gmail.com");
-            
+
             setTimeout(() => {
               submitContactBtn.innerHTML = originalText;
               submitContactBtn.style.background = '';
