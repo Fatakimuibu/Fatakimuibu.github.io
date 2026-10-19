@@ -272,9 +272,12 @@ document.addEventListener('DOMContentLoaded', () => {
     help: `Commandes disponibles :
   <span class="highlight">whoami</span>      - Identité, accréditations et profil de Bethy Fataki
   <span class="highlight">skills</span>      - Synthèse des compétences réseaux, télécoms et cybersécurité
+  <span class="highlight">kali</span>        - Arsenal offensif & distribution Kali Linux
+  <span class="highlight">onion</span>       - Plateforme défensive & supervision SOC Security Onion
+  <span class="highlight">csharp</span>      - Détails de la certification C# Fondamental Microsoft
   <span class="highlight">projects</span>    - Aperçu des projets phares (54 Sites Radio, V-SAT, Forensic)
   <span class="highlight">cve</span>         - Axes de recherche forensic et audits ISO 27001
-  <span class="highlight">certs</span>       - Diplômes et certifications (Cisco, freeCodeCamp, ISTA, Alvarion)
+  <span class="highlight">certs</span>       - Diplômes et certifications (Cisco, freeCodeCamp, Microsoft, ISTA)
   <span class="highlight">contact</span>     - Coordonnées directes, email, téléphone & empreinte PGP
   <span class="highlight">matrix</span>      - Déclencher le flux binaire cyber
   <span class="highlight">clear</span>       - Nettoyer l'affichage du terminal
@@ -282,20 +285,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     whoami: `<span class="highlight">BETHY FATAKI // IT Manager | Expert en Cybersécurité</span>
 Périmètre : Infrastructures Réseaux IP (LAN/WAN/Wi-Fi), Télécoms & V-SAT, Sécurité Offensive & Défensive
+Distributions : Kali Linux (arsenal offensif/pentest) & Security Onion (NSM/SOC/forensic)
 Expérience : 15+ années en environnements critiques, FAI et haute disponibilité
-Certifications Clés : Cisco Ethical Hacker (2026), Python Developer (300h, 2026), ISTA TIC (Distinction), Cisco Network Defense, Alvarion WiMAX
+Certifications Clés : Cisco Ethical Hacker (2026), Python Developer (300h, 2026), C# Fondamental avec Microsoft (2026), ISTA TIC (Distinction), Cisco Network Defense, Alvarion WiMAX
 Localisation : Kinshasa, République Démocratique du Congo // Missions internationales
 Statut : Disponible pour direction IT, audits de sécurité ISO 27001, missions réseaux & pentesting`,
 
     skills: `<span class="highlight">=== ARSENAL RÉSEAUX, DEV & CYBERSÉCURITÉ ===</span>
 [+] <span class="cyan">Réseaux IP & Télécoms :</span>
     Cisco WAN/LAN/Wi-Fi, Microtik, Juniper, Faisceaux Hertziens, V-SAT, WiMAX Alvarion, VoIP
-[+] <span class="warning">Cybersécurité Offensive & Ethical Hacking (Cisco 2026) :</span>
-    Pentest méthodologique, reconnaissance OSINT, exploitation filaire/Wi-Fi, cloud & IoT, post-exploitation
-[+] <span class="warning">Cybersécurité Défensive & SOC :</span>
-    Management opérationnel de SOC, Audits ISO/CEI 27001, Durcissement bases SQL, Forensic SI hybrides
-[+] <span class="success">Programmation & Automatisation (freeCodeCamp 2026) :</span>
-    Développeur Python certifié (300h), scripts d'outillage réseau & SecOps, JavaScript, C#
+[+] <span class="warning">Cybersécurité Offensive & Pentest (Kali Linux & Cisco 2026) :</span>
+    Arsenal Kali Linux (Nmap, Metasploit, Burp Suite, Aircrack-ng, SQLmap, Hydra, John the Ripper), Pentest méthodologique, reconnaissance OSINT, exploitation filaire/sans-fil, cloud & IoT, post-exploitation
+[+] <span class="warning">Cybersécurité Défensive, SOC & NSM (Security Onion) :</span>
+    Plateforme Security Onion (Suricata NIDS/IPS, Zeek, Wazuh EDR, Stenographer, Kibana/OpenSearch), Management opérationnel de SOC, Audits ISO/CEI 27001, Durcissement bases SQL, Forensic SI hybrides
+[+] <span class="success">Programmation & Développement Logiciel (2026) :</span>
+    - Développeur Python certifié freeCodeCamp (300h) : scripts réseau & SecOps, Scapy, parsing
+    - Développeur C# Fondamental certifié Microsoft & freeCodeCamp : POO, écosystème .NET
+    - JavaScript & Responsive Web Design
 [+] <span class="highlight">Systèmes, Cloud & Management :</span>
     Linux/Unix, Windows Server, VMware ESXi, VirtualBox, Proxmox, Azure, AWS, Direction technique`,
 
@@ -314,6 +320,8 @@ Tapez <span class="highlight">'cve'</span> pour voir les audits de recherche ou 
     certs: `<span class="highlight">=== DIPLÔMES & CERTIFICATIONS OFFICIELLES ===</span>
 [★] Cisco Certified Ethical Hacker - Cisco Networking Academy (Mai 2026)
     -> Pentest méthodologique, OSINT, failles filaires/sans-fil, cloud & IoT, post-exploitation
+[★] C# Fondamental avec Microsoft - freeCodeCamp.org & Microsoft (Juin 2026)
+    -> C# syntax, POO, logique algorithmique, écosystème .NET. ID: focalone/foundational-c-sharp-with-microsoft
 [★] Python Developer Certification (300h) - freeCodeCamp.org (Mars 2026)
     -> Algorithmique avancée, programmation système, scripts réseau. ID: focalone/python-v9
 [✓] Diplôme Ingénieur 2ème cycle TIC - ISTA Kinshasa (Distinction, 2016-2018)
@@ -321,6 +329,34 @@ Tapez <span class="highlight">'cve'</span> pour voir les audits de recherche ou 
 [✓] Cisco Certified Network Defense, Cyber Threat Mgmt & Cyber Analyst (2022)
 [✓] Certifications WiMAX : CAIT, CASO, CASS - ALVARION (2010)
 [✓] FreeCodeCamp : JavaScript Algorithms & Responsive Web Design (2021)`,
+
+    kali: `<span class="highlight">=== DISTRIBUTION KALI LINUX // ARSENAL OFFENSIF ===</span>
+Outils maîtrisés en environnement opérationnel :
+- Reconnaissance & Scanning : Nmap, Masscan, Amass, theHarvester
+- Analyse de vulnérabilités & Exploitation : Metasploit Framework, Searchsploit
+- Sécurité Web & Proxies : Burp Suite Professional, OWASP ZAP, SQLmap, Nikto
+- Audit Réseaux Sans-Fil : Aircrack-ng Suite, Kismet, Wifite
+- Cassage de mots de passe : John the Ripper, Hashcat, Hydra
+- Post-Exploitation : Mimikatz, Empire, Meterpreter`,
+
+    onion: `<span class="highlight">=== DISTRIBUTION SECURITY ONION // DÉFENSE & NSM ===</span>
+Composants et outils intégrés pour la supervision SOC & Forensic :
+- NIDS / IPS : Suricata (détection d'intrusions réseau en temps réel)
+- Analyse de protocoles : Zeek / Bro (métadonnées réseau détaillées)
+- HIDS & EDR : Wazuh (surveillance d'intégrité, détection sur les hôtes)
+- Capture complète de paquets : Stenographer
+- Visualisation & Chasse aux menaces (Threat Hunting) : Elasticsearch, Logstash, Kibana (ELK) / OpenSearch
+- Décodage et analyse d'artefacts : CyberChef, NetworkMiner`,
+
+    csharp: `<span class="highlight">=== CERTIFICATION C# FONDAMENTAL AVEC MICROSOFT (2026) ===</span>
+Éditeur : Microsoft & freeCodeCamp.org (19 juin 2026)
+Compétences validées :
+- Syntaxe C# et structures de contrôle modernes
+- Programmation Orientée Objet (POO) : encapsulation, héritage, polymorphisme, interfaces
+- Algorithmes de traitement de données et manipulation de collections
+- Débogage, gestion des exceptions et sécurisation du code applicatif
+- Écosystème .NET et développement d'outils système
+Vérification : https://freecodecamp.org/certification/focalone/foundational-c-sharp-with-microsoft`,
 
     contact: `<span class="highlight">=== COORDONNÉES SÉCURISÉES ===</span>
 Email Pro   : <span class="cyan">fmuibu@gmail.com</span>
