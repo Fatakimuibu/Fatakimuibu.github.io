@@ -458,9 +458,13 @@ section {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   gap: 50px;
   align-items: center;
+}
+
+.hero-content {
+  min-width: 0;
 }
 
 .hero-clearance {
@@ -490,19 +494,22 @@ section {
 
 .hero-role-wrapper {
   font-family: var(--font-mono);
-  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-size: clamp(1rem, 2vw, 1.35rem);
   color: var(--cyan-primary);
   margin-bottom: 24px;
-  min-height: 38px;
+  min-height: 4em;
   display: flex;
-  align-items: center;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.4;
 }
 
 .role-typing {
   border-right: 2px solid var(--cyan-primary);
   padding-right: 4px;
   animation: blink-caret 0.8s infinite;
+  display: inline;
+  word-break: break-word;
 }
 
 @keyframes blink-caret {
@@ -592,6 +599,8 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
+  align-self: center;
+  width: 100%;
 }
 
 .cyber-frame {
